@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+#filter-bar {
+  .categories {
+    width: 120px;
+    text-align: center;
+    .icon {
+      border: 1px solid $brand-color;
+      border-radius: 50%;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      padding: 12px;
+      background-color: $brand-color-light;
+      box-shadow: 0 2px 5px -1px $medium-gray;
+      cursor: pointer;
+      transition: 0.3s;
+      &:hover,
+      &.selected {
+        background-color: $brand-color;
+        color: $white;
+        border: 1px solid $brand-color;
+      }
+      i {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .ui-inputgroup {
+    height: 40px;
+    input {
+      width: 100%;
+    }
+    span {
+      padding-top: 2px;
+      cursor: pointer;
+    }
+  }
+  .location {
+    span {
+      margin-left: 30px;
+    }
+    i {
+      font-size: 1.2em;
+      padding-top: 5px;
+    }
+  }
+  .places-section {
+    margin-left: 30px !important;
+    .places {
+      padding-right: 30px !important;
+      margin-bottom: 30px;
+    }
+  }
+}

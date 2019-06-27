@@ -1,0 +1,136 @@
+@import "variables";
+
+@font-face {
+  font-family: "Rubik";
+  src: url("../assets/fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Copse";
+  src: url("../assets/fonts/Copse-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: $bg-nude !important;
+  font-size: 18px !important;
+  font-family: $font-family-rubik !important;
+  color: $dark-gray !important;
+  line-height: 1.775 !important;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-copse;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-30 {
+  padding-bottom: 30px;
+}
+
+.p-t-15 {
+  padding-top: 15px;
+}
+
+.p-b-15 {
+  padding-bottom: 15px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-b-50 {
+  margin-bottom: 50px;
+}
+
+.m-t-50 {
+  margin-top: 50px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-t-30 {
+  margin-top: 30px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
+.m-t-5 {
+  margin-top: 5px;
+}
+
+.m-b-5 {
+  margin-bottom: 5px;
+}
+
+.p-r-30 {
+  margin-right: 30px !important;
+}
+.p-l-30 {
+  margin-left: 30px;
+}
+
+.copse {
+  font-family: $font-family-copse;
+}
+
+.rubik {
+  font-family: $font-family-rubik;
+}
+
+p-dropdown, .ui-dropdown {
+  width: 100%;
+}

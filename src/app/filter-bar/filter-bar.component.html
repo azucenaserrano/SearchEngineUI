@@ -1,0 +1,35 @@
+<div id="filter-bar">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row justify-content-end m-b-50 p-r-30">
+        <div class="col-md-3">
+          <div class="ui-inputgroup">
+            <input type="text" (keydown.enter)="onSearch()" pInputText placeholder="Search by name or description"
+              [(ngModel)]="search">
+            <span class="ui-inputgroup-addon" (click)="onSearch()"><i class="fa fa-search"></i></span>
+            <span class="ui-inputgroup-addon" (click)="search='';onSearch()"><i class="fa fa-times"></i></span>
+          </div>
+        </div>
+        <div class="col-md-3 location">
+          <div class="ui-inputgroup">
+            <span class="ui-inputgroup-addon" (click)="onSearch()"><i class="fa fa-map-marker"></i></span>
+            <p-dropdown [options]="locations" [(ngModel)]="selectLocation" (onChange)="locationChange()"></p-dropdown>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-auto categories" *ngFor="let category of categories">
+          <span class="icon" (click)="categorySelected(category)" [ngClass]="{'selected' : category.selected}">
+            <i [class]="category.icon"></i>
+          </span>
+          <p class="m-t-15">{{category.name}}</p>
+        </div>
+      </div>
+      <div class="row m-t-50 places-section">
+        <div class="col-md-6 col-sm-12 places" *ngFor="let place of places">
+          <app-place-card [place]="place"></app-place-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
